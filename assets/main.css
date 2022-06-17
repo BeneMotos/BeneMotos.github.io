@@ -1,0 +1,108 @@
+/*
+MOBILE-FIRST
+*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Ubuntu:wght@300&display=swap');
+
+:root {
+    --blackBlaze: #0f1923;
+    --defaultTextColor: white;
+    --redBlaze: #f12c4c;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--defaultTextColor);
+}
+
+body {
+    background-color: var(--blackBlaze);
+}
+
+/* LOGO  */
+header {
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2rem;
+}
+
+/* NAVBAR */
+#navbar {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--redBlaze);
+
+    padding: 0.3rem 0.3rem;
+    margin-top: 1rem;
+}
+
+#navbar a {
+    text-decoration: none;
+    margin-right: 1rem;
+    margin-left: 1rem;
+
+    transition: 1s;
+}
+
+#navbar a:hover {
+    color: gray;
+    box-shadow: 10px 10px black;
+}
+
+/* SECTION  */
+.SellSection  {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.SellSection h2 {
+    padding-left: 0.5rem;
+}
+
+.box-section {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+    justify-content: center;
+    grid-gap: 1rem;
+
+}
+
+.box-item {
+    border: white solid;
+}
+
+/* .box-item:hover {
+    width: 300px;
+} */
+
+.box-item img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/* SPECIAL SECTION  */
+#oleos {
+    text-align: center;
+}
+
+#oleos p {
+    border: white solid 1px;
+}
+
+/* FOOTER  */
+footer {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
