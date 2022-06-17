@@ -26,6 +26,8 @@ header {
     text-align: center;
     font-family: 'Fredoka', sans-serif;
     font-size: 2rem;
+    
+    cursor: context-menu;
 }
 
 /* NAVBAR */
@@ -55,8 +57,8 @@ header {
 }
 
 #navbar a:hover {
-    color: gray;
-    box-shadow: 10px 10px black;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 20px black;
 }
 
 /* SECTION  */
@@ -69,6 +71,7 @@ header {
     padding-left: 0.5rem;
 }
 
+/* centering images width to have the same maybe is a good idea  */
 .box-section {
     text-align: center;
     margin-top: 1.5rem;
@@ -78,20 +81,25 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
     justify-content: center;
     grid-gap: 1rem;
-
+    
+    align-items: center;
 }
 
 .box-item {
-    border: white solid;
+    border: white solid 1px; 
+    border-radius: 10px;
+
+    transition: 1s;
 }
 
-/* .box-item:hover {
-    width: 300px;
-} */
+.box-item:hover {
+    box-shadow: 5px 10px 70px #888888;
+} 
 
 .box-item img {
     object-fit: cover;
     width: 100%;
+    border-radius: 10px;
 }
 
 
@@ -109,4 +117,8 @@ footer {
     margin-top: 100px;
     margin-bottom: 50px;
     text-align: center;
+}
+
+footer p {
+    margin-top: 1rem;
 }
