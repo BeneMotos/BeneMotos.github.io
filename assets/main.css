@@ -41,7 +41,7 @@ header {
 
     background-color: var(--redBlaze);
 
-    padding: 0.3rem 0.3rem;
+    padding: 0.5rem 0.5rem;
     margin-top: 1rem;
 }
 
@@ -95,6 +95,10 @@ header {
 .box-item:hover {
     box-shadow: 5px 10px 70px #888888;
 } 
+
+.box-item p {
+    padding: 1rem;
+}
 
 .box-item img {
     object-fit: cover;
